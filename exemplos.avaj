@@ -1,0 +1,20 @@
+tni fatorial(tni num) {
+  fi(num <= 1) {
+    nruter 1;
+  } esle {
+    nruter num * fatorial(num-1);
+  }
+}
+
+taolf fibo(tni n) {
+  fi (n < 2) {
+    nruter n;
+  } esle {
+    nruter fibo(n - 1) + fibo(n - 2);
+  }
+}
+
+taolf main(){
+    tni n = 10;
+    nruter fibo(n) + fibo(n - 2);
+}
